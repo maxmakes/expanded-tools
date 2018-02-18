@@ -1,0 +1,450 @@
+/* reset padding and margins */
+
+body {
+    margin: auto;
+    max-width: 2200px;
+}
+
+.cell {
+    
+    width: 18vw;
+    height: 18vw;
+    border-radius: 50%;
+    
+    display: inline-block;
+    margin: 1vw;
+    float: left;
+    
+    overflow: hidden;
+    
+    position: relative;
+
+    background-color: lightpink;
+}
+
+
+p::selection { display: none; }
+a::selection { display: none; }
+
+
+.cell:hover {
+    cursor: pointer;
+}
+
+@media (min-width:1800px) {
+    
+    .cell {
+        width: 25%;
+    }
+}
+
+@media (max-width:1200px) {
+    
+    .cell {
+        width: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    
+    .cell {
+        width: 100%;
+    }
+    
+    
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* container */
+.container {
+	position: relative;
+}
+
+/* items */
+
+.item {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background: blue;
+	color: yellow;
+
+	margin: 10px;
+
+	/* comment out 'float: left;' to have items stack in a single column */
+	float: left; 
+
+	/* uncomment this to get CSS transitions (conflicts with jQuery) */
+	/* transition: all 500ms ease; */
+}
+
+/* button 1 grows */
+#button-1:hover {
+	transform: scale(1.5);
+}
+
+/* button 2 lightens */
+#button-2:hover {
+	opacity: .3;
+}
+
+#button-2:active {
+	background: black;
+	opacity: 1;
+}
+
+/* button 3 dissapears on click */
+#button-3{
+
+}
+
+/* button 4 hover to affect 5 & 6 */
+#button-4 {
+}
+
+/* button dissapears when 4 is hovered */
+#button-5{
+
+}
+
+/* button 6 turns yellow when 4 is hovered */
+.change-yellow {
+	background-color: yellow;
+	transition: all 2s;
+}
+
+/* button 7 becomes rounded square */
+#button-7:hover {
+	border-radius: 20%;
+}
+
+/* button 8 dissapears */
+#button-8:hover {
+	border-style: dotted;
+}
+
+/* button 9 dotted boarder */
+#button-9:hover {
+	opacity: .0;
+}
+
+/* button 10 makes 10-15 flicker */
+#button-10:hover {
+	border-style: dotted;
+	border-color: red;
+}
+
+/* button 11 becomes sqauare*/
+#button-11:hover {
+	border-radius: 0%;
+}
+
+/* button 12 */
+#button-12:hover {
+	width: 18vw;
+    height: 8vw;
+    transition: ease 5s;
+    background-color: gray;
+}
+
+/* button 13 */
+#button-13:hover {
+	border-radius: 2%;
+	transform: rotate(30deg);
+	background-color: red;
+}
+
+/* button 14 */
+#button-14:hover {
+	width: 18vw;
+    height: 2vw;
+    border-radius: 2%;
+    transition: ease 5s;
+}
+
+/* button 15 */
+#button-15:hover {
+	width: 2vw;
+    height: 18vw;
+    border-radius: 2%;
+    transition: ease 5s;
+}
+
+/* button 16 grow */
+#button-16:hover {
+	border-radius: 40%;
+	transform: scale(1.5);
+	transition: ease 5s;
+}
+
+/* button 17 grow more */
+#button-17:hover {
+	border-radius: 30%;
+	transform: scale(1.7);
+	transition: ease 5s;
+}
+
+/* button 18 grow even more */
+#button-18:hover {
+	border-radius: 20%;
+	transform: scale(2);
+	transition: ease 5s;
+}
+
+/* button 19 grow way more*/
+#button-19:hover {
+	border-radius: 10%;
+	transform: scale(2.2);
+	transition: ease 5s;
+}
+
+/* button 20 fill screen turn green*/
+#button-20:hover {
+	border-radius: 0%;
+	transform: scale(12);
+	transition: ease 5s;
+	background-color: lightgreen;
+}
+
+/* button 21 */
+#button-21:hover {
+	border-style: solid;
+	border-color: black;
+	border-width: 2vw;
+}
+
+
+/* button 22 */
+#button-22:hover {
+	width:10vw;
+	height:10vw;
+	transition: ease 5s;
+}
+
+/* button 23 */
+#button-23:hover {
+	width:10vw;
+	height:10vw;
+	transition: ease 1s;
+	background-color: blue;
+}
+
+/* button 24 */
+#button-24:hover {
+	width:6vw;
+	height:6vw;
+	transition: ease 3s;
+	background-color: tomato;
+}
+
+/* button 25 */
+#button-25:hover {
+	width:2vw;
+	height:2vw;
+	transition: ease 10s;
+	background-color: black;
+}
+
+/* button 26 */
+#button-26:hover {
+	border-color: white;
+	border-style: solid;
+	border-width: 8vw;
+	width:2vw;
+	height:2vw;
+}
+
+/* button 27 */
+#button-27:hover {
+	border-color: white;
+	border-style: solid;
+	border-width: 7vw;
+	width:4vw;
+	height:4vw;
+	background-color:yellow;
+}
+
+/* button 28 */
+#button-28:hover {
+	border-color: white;
+	border-style: solid;
+	border-width: 5vw;
+	width:6vw;
+	height:6vw;
+	background-color: blue;
+}
+
+/* button 29 */
+#button-29:hover {
+	border-color: white;
+	border-style: solid;
+	border-width: 8vw;
+	width:2vw;
+	height:2vw;
+	background-color:hotpink;
+}
+
+/* button 30 */
+#button-30:hover {
+	border-color: white;
+	border-style: solid;
+	border-width: 9vw;
+	width:1vw;
+	height:1vw;
+	background-color: green;
+}
+
+/* button 31 */
+
+/* button 32 */
+#button-32:hover {
+	border-color: white;
+	border-style: solid;
+	border-width: 8vw;
+	width:10vw;
+	height:10vw;
+	border-radius: 0%;
+}
+
+/* button 33 */
+#button-33:hover {
+	border-radius:30%;
+	transform: rotate(300deg);
+	width:10vw;
+	transition: ease 2s;
+}
+
+/* button 34 */
+#button-34:hover {
+	border-radius:10%;
+	transform: rotate(800deg);
+	width:16vw;
+	transition: ease 2s;
+}
+
+/* button 35 */
+#button-35:hover {
+	border-radius:10%;
+	transform: rotate(2000deg);
+	width:16vw;
+	background-color: gray;
+	transition: ease 2s;
+}
+
+/* button 36 */
+#button-36:hover {
+	border-radius:0%;
+	transform: rotate(20deg);
+	background-color:limegreen;
+	transition: ease 2s;
+}
+
+/* button 37 */
+#button-37:hover {
+	border-radius:0%;
+	transform: rotate(50deg);
+	background-color:green;
+	transition: ease 2s;
+}
+
+/* button 38 */
+#button-38:hover {
+	border-radius:0%;
+	transform: rotate(85deg);
+	background-color:blue;
+	transition: ease 2s;
+}
+
+/* button 39 */
+#button-39:hover {
+	border-radius:0%;
+	transform: rotate(120deg);
+	background-color:purple;
+	transition: ease 2s;
+}
+
+/* button 40 */
+#button-40:hover {
+	border-radius:0%;
+	transform: rotate(200deg);
+	background-color:hotpink;
+	transition: ease 2s;
+}
+
+/* button 41 */
+#button-41:hover {
+	opacity: .5;
+	transform: scale(5);
+}
+
+/* button 42 */
+#button-42:hover {
+	opacity: .5;
+	transform: scale(10);
+	border-radius:0%;
+	background-color: beige;
+}
+
+/* button 43 */
+#button-43:hover{
+	transform: scale(50);
+	background-color: white;
+}
+
+/* button 44 */
+#button-44:hover {
+	opacity: .9;
+	transform: scale(3);
+	border-radius:0%;
+	background-color: black;
+}
+
+/* button 45 */
+#button-45:hover {
+	opacity: .9;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+}
+
+/* button 46 */
+#button-46:hover{
+	background-color: green;
+	transform: rotate(2000deg);
+	transition: ease 3sec;
+}
+
+/* button 47 */
+#button-47:hover{
+	margin-left:10vw;
+	transition: ease 5sec;
+
+}
+
+/* button 48 */
+#button-48:hover{
+	transform: scale(20);
+	background-color: yellow;
+}
+
+/* button 49 */
+#button-49:hover{
+	width:100vw;
+	height:100vw;
+	color:black;
+}
+
+/* button 50 */
+#button-50:hover{
+	transform: scale(20);
+	background-color: black;
+}
+
+
+
+
+
