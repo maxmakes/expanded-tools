@@ -1,0 +1,719 @@
+<html>
+<head>
+
+
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="myscript.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<title>How to Make a Pinata</title>
+
+	<style> 
+
+	body{
+		margin-left: 7.5vw;	
+   		background-image:url('images/pinkconfetti.gif');
+    	background-size:100%;
+    	background-repeat: repeat-y;
+    	background-attachment: fixed;
+    	height:100%;
+    	width:100%;}
+
+	
+
+	div.screen { /* dims background */
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 50;
+		width: 100vw;
+		height: 300vh;
+		display: none;
+		/*background-color: white;*/ 
+		background: linear-gradient(to top right, yellow, pink);
+	}
+
+	.HowToParts img{
+		width: 10vw;
+		height: auto;
+	}
+
+img { 
+max-width: 800px;
+height: auto; }
+
+a {text-decoration: none;}
+
+h1{
+	color: tomato;
+	font-family: 'Lobster';
+	font-size: 6vw;
+	line-height: 6vw;
+	margin: .5vw;
+	padding-top: 1vw;
+	text-align: center;
+	}
+
+
+h2{ 
+	color: hotpink; 
+	font-family: 'Lobster';
+	font-size: 2vw;
+	margin-top: 5vw;
+	padding: 1vw;}
+
+h3{
+	color: yellow; 
+	font-family: 'Lobster';
+	font-size: 2vw;
+}
+	
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+p{}	
+
+a:hover {
+	transform: scale(1, 2);
+}	
+	
+
+.caption {
+display: none;
+/*border: solid hotpink 1px;*/
+z-index: 99;
+background-color: white;
+position: absolute;
+top:0vh;
+left:24vw;
+height: 200vw;
+width: 40vw;
+margin: auto;
+/*margin-left: 2vw;*/
+padding-left: 7vw;
+padding-right: 7vw;
+padding-top: 2vw;
+
+/*background-blend-mode: overlay;
+background-repeat: no-repeat;
+background-size: 100% auto;*/
+}
+
+
+.category{
+	display: none;}
+
+
+.chapter{
+	width: 16.8vw;
+	height: 16.8vw;
+	border-radius: 50%;
+	border: 10px solid none;
+	background-color: lightpink;
+	float: left;
+	display: block;
+	/*padding-left: 15px;*/
+	text-align: center;
+	margin-top: 10px;
+
+	}
+
+.chapter:hover{
+	background-color: #03a9f491;
+	transition: ease 1s;
+}	
+
+/*.chaptertitle{
+	position: absolute;
+	top: 1vw;
+	left: 8.5vw;
+	margin: 0;
+}*/
+
+.name{
+	background: transparent;
+	border: none;
+	width: 82vw;
+	height: 8vw;
+	text-align: center;
+	top: 10px;
+	margin: 0;
+	margin-left:2vw;
+	text-shadow: 3px 3px yellow;
+	/*margin-right: 2vw;*/
+}
+
+.tools{
+	border-radius: 0%;
+	width: 75vw;
+	height: 7vw;
+	margin-left: 5vw;
+	background-color: hotpink;
+}
+
+.parts{
+}
+
+.base{
+	background: yellow;
+}
+
+.mache{
+	background: yellow;
+}
+
+.fringe{
+	background: yellow;
+}
+
+.flap{
+	background: yellow;
+}
+
+.hook{
+	background: yellow;
+}
+
+.whack{
+	background: yellow;
+}
+
+.doanddont{}
+
+.variation{
+	background: yellow;
+}
+
+.shapes{}
+
+.credit{
+	border-radius: 0%;
+	width: 75vw;
+	height: 8vw;
+	margin-left: 5vw;
+	background-color: white;
+	left:13vw;
+	padding-top: 3vw;
+}
+
+.HowToTools{
+	/*padding-left:2vw;
+	padding-right:2vw;*/
+	width: 60vw;
+	height: 50vw;
+	left:13vw;
+}
+
+div.HowToTools h1{
+	padding-bottom: 5vw;
+}
+
+div.HowToTools img{
+	border: 10px solid white;
+}
+
+.HowToParts{
+	height: 50vw;
+}
+
+div.HowToParts img{
+	width: 40vw;
+	height: auto;
+	margin-top: 1vw;
+}
+
+.HowToBase{
+	height: 340vw;
+}
+
+.HowToMache{
+	height: 210vw;
+}
+
+.HowToFringe{}
+
+.HowToFlap{
+	height: 130vw;
+}
+
+.HowToHook{
+	height: 145vw;
+}
+
+div.HowToHook img{
+	width: 30vw;
+	height: auto;
+	padding-left: 4vw;
+}
+
+.HowToWhack{
+	height: 60vw;
+}
+
+.HowToDo{}
+
+.HowToVariations{
+	height: 330vw;
+}
+
+div.HowToVariations img{
+	width:40vw;
+	height:auto;
+	padding-top: 3vw;
+}
+
+.HowToShapes{
+	height: 165vw;
+}
+
+div.HowToShapes img{
+	width:19vw;
+	height:auto;
+	padding-top: 3vw;
+}
+
+
+div.tools img{
+	width: 5px;
+	height: auto;
+}
+
+
+div.base img{
+	width: 10px;
+	height: 20vw;
+	padding-left: 5vw;
+}
+
+div.HowToFlap img{
+	width: 20vw;
+	height: auto;
+	padding-left:10vw;
+}
+
+#toolscaption{
+	background-image:url("");
+}
+
+#partscaption{
+	background-image:url("partsdiagram.png");
+
+}
+
+#basecaption{
+	background-image:url("");
+}
+
+#machecaption{
+	
+}
+
+#fringecaption{
+
+}
+
+#flapcaption{
+
+}
+
+#hookcaption{
+
+}
+
+.gif{
+	background-image:url("images/whack.gif");
+	height: 75vw;
+	width: 35vw;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	margin: none;
+	/*background-image:height (10px);*/
+}
+
+#doanddontcaption{
+
+}
+
+#variationscaption{
+
+}
+
+#shapescaption{
+
+}
+
+#creditscaption{
+
+}
+
+	</style>
+
+	</head>	
+
+	<body>	
+
+<div class="screen"> </div>
+ 
+<!-- Title of project etc-->
+	<div class=" name"> 
+		<h1> How to Make a Pinata </h1> </div>
+
+<!-- How to Identify the Parts of a Pinata -->	
+	<div class="chapter parts" src="partspic.png"> 
+		<h2>Identify the Parts of a Pinata </h2> </div>
+	<div class="caption HowToParts" id="partscaption">
+		<h1> Identify the Parts of a Pinata </h1>
+		<img src="images/partsdiagram.png">	
+	</div>
+
+<!-- How to Make a Pinata with a Cardboard Base-->	
+	<div class="chapter base" src=""> 
+	<h2> Make Pinata with a Cardboard Base </h2></div>
+	<div class="caption HowToBase" id="basecaption">
+		<h1> Make a Pinata with a Cardboard Base</h1>
+		<h2>Supplies</h2> 
+		<p>Cardboard</p>
+		<p>Ruler</p>
+		<p>Exacto Knife</p>
+		<p>Tape</p>
+		<h2>Step One</h2>
+		<p>Stack two pieces of cardboard together. Draw your pinata shape and then cut through the two layers of cardboard at the same time. These will be the front and back of the pinata body. * </p>
+		<div> <img src="images/base1.png" > </div>
+
+		<h2>Step Two </h2>
+		<p> Cut strips of cardboard for the edging (between 3-5" thick) you will need enough to go arond the entire pinata body. </p>			
+		<div> <img src="images/base2.png"> </div>
+
+		<h2>Step Three</h2>
+		<p> Taking the strips, tape together the front and back of the pinata body. Reinforce it on the outside and on the inside as well. </p>
+		<div> <img src="images/base3.png"> </div>
+		
+		<h2>Step Four </h2>
+		<p> Cut strips of cardboard for the edging (between 3-5" thick) you will need enough to go arond the entire pinata body. </p>
+		<img src="images/base4.png">
+
+		<h2>Step Five - Optional </h2>
+		<p> Cover structure with papier mache (see how to papier mache) This will make the pinata much stronger but also heavier. </p>
+
+		<h2>Step Six </h2>
+		<p> Cover the pinata body with solid crepe paper or paper fringe (see how to make decorative paper fringe). </p>
+		<img src="images/base5.png">
+
+		<h2>Step Seven </h2>
+		<p> Cut a candy flap and then repair with paper. (see how to make a candy flap)</p>
+
+		<h2>Step Eight </h2>
+		<p> Cut holes to hang pinata (see how to make a hanging hook)</p>
+		<img src="images/base6.png">
+
+		<p> * Be sure to put some layers below the cardboard so your cutting surface (table or floor) is not getting cut as well. </p> 
+		 </div>
+
+<!-- How Make Paper Mache-->	
+	<div class="chapter mache" src=""> 
+		<h2> Paper Mache </h2></div>
+	<div class="caption HowToMache" id="machecaption"> 
+	<h1> Paper Mache </h1>
+		<h2>Supplies</h2> 
+		<p>Drop Cloth</p>
+		<p>Bowl</p>
+		<p>Water</p>
+		<p>Flour</p>
+		<p>Whisk</p>
+		<p>Newspaper</p>
+
+		<img src="images/mache.gif">
+		<h2>Step One </h2>
+		<p> Lay down a dropcloth or cheap plastic tablecloth first, and have a couple sheets of moist paper towels on hand. </p>
+		<h2>Step Two </h2>
+		<p> Mix flour and water in a one-to-one ratio. If you plan to store your pinata you can add two tablespoons of salt to keep away bugs. * </p>	
+		<h2>Step Three </h2>
+		<p> Pour the water into a bowl with gently sloping sides then mix in the flour a little at a time using a whisk. </p>
+		<h2>Step Four </h2>	
+		<p> When the lumps are gone, the mixture should be the consistency of pancake batter. </p>
+		<h2>Step Five </h2>
+		<p> Tear newspaper into 1.5 to 2 inch wide strips (narrower if your pinata has a lot of tight corners).</p>
+		<!-- <img src="images/papermache1.png"> -->
+		<h2>Step Six </h2>
+		<p> Dip one side of the newspaper strip into the papier mache then turn it over and wet the other side as well. </p>
+		<h2>Step Seven </h2>
+		<p> Wipe off the excess papier mache by pulling the strip between your first and second finger. </p>
+		<!-- <img src="images/papermache2.png"> -->
+		<h2>Step Eight </h2>
+		<p> Lay the newspaper strip across the pinata base and smooth it down. Continue until the entire cardboard base is covered. </p>
+		<h2>Step Nine</h2>
+		<p> To make wet papier mache dry faster, set up a small fan blowing on it. </p>
+	<!-- 	<img src="images/papermache3.png"> -->
+		<h2>Step Ten </h2>
+		<p> If you accidentally make the walls of the pinata too thick to break through, weaken the walls by stabbing or scoring them with a knife before decorating. </p>
+		<p> * There are many different recipies for paper mache (in french, papier mache) Some boil the flour and water mixture, some use white glue instead of flour,a nd some even use laundry starch. The simplest is to just mix flour and water and not heat it. </p>
+		
+		</div>
+
+<!-- How to Make Decorative Paper Fringe / Fringe Patterns-->	
+	<div class="chapter fringe" src=""> 
+	<h2> Make Decorative Paper Fringe </h2></div>
+	<div class="caption HowToFringe" id="fringecaption">
+		<h1> Make Decorative Paper Fringe</h1>	
+		<h2>Supplies</h2> 
+		<p>Crepe Paper</p>
+		<p>or</p>
+		<p>Tissue Paper* </p>
+		<p>Scissors</p>
+
+		<h2>Step One </h2>
+		<p> Cut paper into 2-3" wide strips. </p>
+		<img src="images/fringe1.png">
+		
+		<h2>Step Two </h2>
+		<p> Fold paper strips in half. </p>
+		<img src="images/fringe2.png">
+
+		<h2>Step Three </h2>
+		<p> Cut evenly spaced fringe along the uncut edge of the paper strip. Leave some uncut area at the top. </p>
+		<img src="images/fringe3.png">
+
+		<h2>Step Four </h2>
+		<p> Muss up the fringe, separate the layers and crunch it with your fingers for more texture. </p>
+		<img src="images/fringe4.png">
+
+		<p> * Crepe paper comes in both sheets and streamer. Tissue paper usually comes in packs that can be separated out into individual sheets. Any of these can be used to create decorative fringe for pinatas depending on the desired texture. </p>
+
+		<h2> Additional Fringe Patterns </h2>
+		<img src="images/patterns.png"> </div>
+
+<!-- How to Make a Candy Flap-->	
+	<div class="chapter flap" src=""> 
+	<h2> Make a Candy Flap </h2></div>
+	<div class="caption HowToFlap" id="flapcaption">
+		<h1> Make a Candy Flap</h1>	
+		<h2>Supplies</h2> 
+		<p>Exacto Knife</p>
+		<p>Paper</p>
+		<p>Glue </p>
+		<p>Candy*</p>
+		<div> <img src="images/candyflap1.png"> </div>
+		<h2>Step One</h2>
+		<p> Cut out three sides of a rectangle into the pinata somewhere near the top with a utility knife or even a serrated steak knife. </p>
+		<h2>Step Two</h2>
+		<p> Fill the pinata with candy. </p>		
+		<h2>Step Three</h2>
+		<p> Close the candy flap, glue shut and then cover with whichever decorative cover you used on the pinata body so that the flap will dissapear. </p>
+		<p> It is usually easiest to add the candy flap after the decoration is complete. </p>
+		<p> * Any candy used to fill a pinata should be individually wrapped so that it is safe to eat after falling to the ground. If you wish to supplement or replace candy you can use small toys, craft supplies, play jewelry or glow sticks among many other fun pinata fillings. </p> 
+		</div>
+
+<!-- How to Make a Hanging Hook-->	
+	<div class="chapter hook" src=""> 
+	<h2> Make a Hanging Hook </h2></div>
+	<div class="caption HowToHook" id="hookcaption">
+		<h1> Make a Hanging Hook</h1>	
+		<p>     </p>
+		<h2> Before we begin, a very important note! </h2>
+		<p> The hook is one of the most important parts of the whole pinata-making process. The hook as to support the weight of the filled pinata and it must also be able to withstand a direct hit from the stick. </p>
+		
+		<div> <img src="images/hook1.png"> </div>
+
+		<h2> Option One </h2>	
+		<p> If your pinata is lightweight, punch two holes in the top of your pinata and run a piece of string through the holes</p>
+		<h2> OR </h2>
+		<h2> Option Two </h2>
+		<p> If your pinata is particularly heavy, use thick wire or a repurposed wire coat hanger twisted into a circular shape* </p>	
+		<img src="images/hook2.png">
+		<p> *Always twist your hanging hook into a closed loop. Never use an open hook (like an upside-down J), because pinatas swing and bounch as they are hit and it's easy for a J-hook to come off the rope. </p>
+		</div>
+
+<!-- How to Whack a Pinata-->	
+	<div class="chapter whack"> 
+	<h2> Whack a Pinata </h2></div>
+	<div class="caption HowToWhack" id="whackcaption">
+		<h1> Whack a Pinata</h1>
+		<div class="gif"> </div>
+		<!-- <img src="images/whack.gif"> -->
+		</div>
+
+<!-- Do's and Don'ts-->	
+	<div class="chapter doanddont"> 
+	<h2> Do's and Don'ts </h2></div>
+	<div class="caption HowToDo" id="doanddontcaption">
+		<h1> Do's and Don'ts</h1> 
+		<h2> Do these things! </h2>
+		<p> -Find a safe place to hang the pinata with enough space to keep spectators out of range of the stick's swing. </p>
+		<p> -Watch the backswing. </p>
+		<p> -Have one person working the rope while another manages the waiting participants. </p>
+		<p> -Make sure your pinata hook is a securely closed loop, not a J-shape or open hook. </p>
+		<p> -Use a carabiner or spring hook to attache the rope to the pinata. This way you can have a secure knot tied and tested. When it's time to hang the pinata just slip on the carabiner and you're ready to go. </p>
+		<p> -Test your knot before hanging the pintata to make sure it will not slip. </p>
+		<p> -Use an appropriately sized stick for the pinata and participants* </p>
+		<p> Be prepared to weaken the pinata with a knife or scissors if it turns out the pinata is too thick to break. </p>
+		<p> Try to give as many people as possible a chance to whack the pinata before it breaks open. </p>
+		<p> *A baseball bat is often too damaging and a plastic broomstick might be completely ineffective. Consider who will be whacking the pinata and whether or not they will be blindfolded. </p>
+		<h2> Don't do these things :( </h2>
+		<p> -Don't jerk the rope sharply or lower the pinata too abruptly on larger pinatas. Even a cardboard-reinforced hanging hook can tear through the paper mache if subjected to too much force. This is usually not a problem for ightweight pinatas, but can be a factor on heavier ones. </p>
+		<p> -Don't put breakable toys or candy in the pinata. Hard candies can shatter when hit by the stick or trampled by enthusiastic participants. </p>
+		</div>		
+
+<!-- Pinata Variations-->	
+	<div class="chapter variation"> 
+	<h2> Variations </h2></div>
+	<div class="caption HowToVariations" id="variationscaption">
+		<h1> Variations</h1>
+
+		<h2> Unicorn Pinata </h2>	
+		<div> <img src="images/unicorn.png"> </div>
+		<p> Supplies </p>
+		<p> Pinata Base </p>
+		<p> White decorative paper fringe </p>
+		<p> Gold cellophane streamers </p>
+		<p> Gold construction paper </p>
+		<p> 1 Construct horse shaped pinata base. </p>
+		<p> 2 Glue on white decorative fringe. </p>
+		<p> 3 Cut and glue on mane and tail made from gold cellophane. </p>
+		<p> 4 Cut out eyes and glue on. </p>
+		<p> 5 Cut out horn shape and form into cone and attach with glue. </p>
+
+		<h2> Confetti Pinata </h2>
+		<img src="images/confetti.png">
+		<p> Supplies </p>
+		<p> Small paper lantern </p>
+		<p> Decorative fringe </p>
+		<p> Scissors </p>
+		<p> Glue </p>
+		<p> Twine </p>
+		<p> Freezer paper </p>
+		<p> Confetti* </p>
+		<p> 1 Unfold paper lantern and insert wire form. </p>
+		<p> 2 Cover lantern with decorative fringe. </p>
+		<p> 3 Cut a circle of freezer paper into lantern, pushing down to cover the bottom opening. </p>
+		<p> 4 Tape a piece of twine to the freezer paper. </p>
+		<p> 5 Insert the circle twine side down, through the bottom of the lantern. </p>
+		<p> 6 Fill with confetti. </p>
+		<p> 7 Hang pinata and pull string to release confetti. </p>
+
+		<h2> Confetti Pinata </h2>
+		<img src="images/cactus.png">
+		<p> Supplies </p>
+		<p> Newspaper</p>
+		<p> Tissue Paper </p>
+		<p> Green Decorative fringe </p>
+		<p> Masking Tape </p>
+		<p> White or Green String </p>
+		<p> Glue </p>
+		<p> Toilet paper rolls </p>
+		<p> 1 Scrunch newspaper into a ball and use masking tape to attach it to one end of the toilet paper roll. This forms the rounded top of the cactus. Scrunch another piece of newspaper to form each arm. </p>
+		<p> 2 Cut a 3" square of tissue paper and draw an X in the center of it. </p>
+		<p> 3 Use clear tape to attach a 6" piece of green string onto the X. </p>
+		<p> 4 Fill the tube with candy or confetti. Use the glue stick to attach the tissue paper square to the sides of the toilet paper roll. </p>
+		<p> 5 Tape a piece of white string to the top. </p>
+		<p> 6 Cover pinata base in decorative fringe. Add flowers if desired. </p>
+		<p> 7 Hang the pinata from the white string and use the green pull string to drop the fillings. </p>
+
+		<h2> Panda head Pinata* </h2>
+		<img src="images/panda.png">
+		<p> Supplies </p>
+		<p> Pinata Base** </p>
+		<p> Black and white decorative fringe </p>
+		<p> Black, white and pink decorative fringe </p>
+		<p> Googly eyes </p>
+		<p> 1 Construct flat circular pinata base with two half circles for ears. </p>
+		<p> 2 Decorate with white and black crepe paper fringe according to diagram below. </p>
+		<p> 3 Cut construction paper for face and glue to front of pinata. </p>
+		<p> 4 Add googly eyes </p>
+		<p> * This pinata could be made as different animals (including a tiger, bear, cat or dog) by changing the color of the decorative fringe and the shape of the eyes and nose.  </p>
+		<p> ** Follow instructions for how to make a cardboard pinata base </p> </div>
+
+<!-- Suggestions for Additional Shapes-->	
+	<div class="chapter shapes"> 
+	<h2> Suggestions for Additional Shapes </h2></div>
+	<div class="caption HowToShapes" id="shapescaption">
+		<h1> Suggestions for Additional Shapes</h1>	
+		
+		<div> <img src="images/bunny.png"> 
+		<img src="images/cloud.png">
+		<img src="images/eye.png">
+		<img src="images/flamingo.png">
+		<img src="images/G7.png">
+		<img src="images/geometric.png">
+		<img src="images/ghost.png">
+		<img src="images/hand.png">
+		<img src="images/heart.png">
+		<img src="images/icecream.png">
+		<img src="images/moon.png">
+		<img src="images/popsicle.png"> </div>
+		</div>		
+
+<!-- Tools and Material -->	
+	<div class="chapter tools" src="toolspic.png"> 
+		<h3> Tools and Materials </h3> </div> 
+	<div class="caption HowToTools" id="toolscaption" > 
+	<h1> Tools and Materials </h1>
+	<a href="https://smile.amazon.com/Works-JoJo-Siwa-Light-Wiggle/dp/B076HYRQ8R/ref=sr_1_1?ie=UTF8&qid=1520870485&sr=8-1&keywords=light+up+pen+with+feather">
+  <img src="images/pen.png" alt="Pen" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+ 	<a href="https://www.amazon.com/Scotch-Transparent-Glossy-Finish-2157SS/dp/B003GSB944/ref=sr_1_7?ie=UTF8&qid=1522031087&sr=8-7&keywords=clear+tape">
+  <img src="images/tape.png" alt="Tape" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+	<a href="https://www.amazon.com/Good-Cook-Plastic-7-Quart-colors/dp/B001AXH2XE/ref=sr_1_9?s=home-garden&ie=UTF8&qid=1522031261&sr=1-9&keywords=plastic+mixing+bowl">
+  <img src="images/papermache.png" alt="Paper Mache" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+	<a href="https://media.giphy.com/media/wtCFBQ0lNjxaU/giphy.gif">
+  <img src="images/box.png" alt="Cardboard" style="width:11vw;height:11vw;border:0;">
+	</a>
+	 
+	 <a href="https://www.amazon.com/Pusdon-Masking-White-4-Inch-Yards/dp/B01KZVY914/ref=sr_1_1_sspa?s=home-garden&ie=UTF8&qid=1522032303&sr=1-1-spons&keywords=masking+tape&psc=1">
+  <img src="images/masking.png" alt="Masking Tape" style="width:11vw;height:11vw;border:0;">
+	</a>
+	 
+	<a href="https://www.amazon.com/Norpro-942-Cotton-Twine/dp/B000ST1EW6/ref=sr_1_5?s=home-garden&ie=UTF8&qid=1522032325&sr=1-5&keywords=string">
+  <img src="images/string.png" alt="String" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+	<a href="https://www.amazon.com/X-ACTO-X3252-Designer-Gripster-Knife/dp/B002KE66PW/ref=sr_1_5?s=home-garden&ie=UTF8&qid=1522032349&sr=1-5&keywords=exacto+knife">
+  <img src="images/exacto.png" alt="Exacto" style="width:11vw;height:11vw;border:0;">
+	</a>
+	
+	<a href="https://media.giphy.com/media/wtCFBQ0lNjxaU/giphy.gif">
+  <img src="images/crepe.png" alt="Crepe Paper" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+	<a href="https://www.amazon.com/Natural-Twisted-FMS-Ravenox-Diameter/dp/B017EA0EKE/ref=sr_1_1_sspa?s=home-garden&ie=UTF8&qid=1522032449&sr=1-1-spons&keywords=rope&th=1&psc=1">
+  <img src="images/rope.png" alt="Rope" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+	<a href="https://www.amazon.com/Darice-24-Inch-Stainless-Steel-Ruler/dp/B004GXBXOE/ref=sr_1_18?s=home-garden&ie=UTF8&qid=1522032484&sr=1-18&keywords=ruler">
+  <img src="images/ruler.png" alt="Ruler" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+	<a href="https://www.amazon.com/dp/B015RXGIPU/ref=twister_B015TK3ZA2?_encoding=UTF8&psc=1">
+  <img src="images/tissue.png" alt="Tissue Paper" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+	<a href="https://media.giphy.com/media/3oEjHWuJieghzbBams/giphy.gif">
+  <img src="images/hanger.png" alt="Wire Hanger" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+	<a href="https://www.amazon.com/Chris-W-All-Purpose-Ergonomic-Scissors-Office/dp/B077XC3GN3/ref=sr_1_1?s=home-garden&ie=UTF8&qid=1522032594&sr=1-1&keywords=gold+scissors&refinements=p_n_srvg_2947266011%3A2972986011">
+  <img src="images/scissors.png" alt="Scissors" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+	<a href="https://www.amazon.com/Elmers-Glue-All-Repositionable-Gallon-4-Pack/dp/B01LX7N113/ref=sr_1_1?s=home-garden&ie=UTF8&qid=1522032635&sr=1-1&keywords=white+glue&refinements=p_n_srvg_2947266011%3A2972996011">
+  <img src="images/glue.png" alt="Glue" style="width:11vw;height:11vw;border:0;">
+	</a>
+
+	<a href="https://www.amazon.com/Aluminum-Carabiner-Keychain-Carabiners-Multi-Color/dp/B0147Z96PI/ref=sr_1_cc_3?s=aps&ie=UTF8&qid=1522032658&sr=1-3-catcorr&keywords=carabeaner">
+  <img src="images/carabeaner.png" alt="Carabeaner" style="width:11vw;height:11vw;border:0;">
+	</a>
+	</div>		
+
+<!-- Credits -->
+	<div class="chapter credit"> <p> This website was designed and coded by Max Makes aka Max DeVore. </p>  <p> All the text and illustrations are orginally from <a href="https://www.maxmakes.co/how-to-make-a-pinata/"> this book about pinatas </a> also by Max Makes </p> </div>
+
+</body>
+
+</html>
