@@ -2,7 +2,7 @@ $(document).ready(function(){
 	//hiding poems
 	$(" poem").hide();
 	
-	$(".title").hide();
+	// $(".title").hide();
 
 	
 	//showing poems when corresponding Title is clicked
