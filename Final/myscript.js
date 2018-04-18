@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//hiding poems
-	$(" poem").hide();
+	$(".poem").hide();
 	
 	// $(".title").hide();
 
@@ -13,7 +13,7 @@ $(document).ready(function(){
 		//$(".screen").show();});
 
 	$(".title").click(function(){
-		$("#tool poem").show();
+		$(".poem").show();
 		// show "screen" div
 		$(".screen").show();
 	});
